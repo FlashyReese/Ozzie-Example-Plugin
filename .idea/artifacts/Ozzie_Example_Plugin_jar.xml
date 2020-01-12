@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Ozzie Example Plugin:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Ozzie_Example_Plugin_jar</output-path>
+    <root id="archive" name="Ozzie Example Plugin.jar">
+      <element id="module-output" name="Ozzie Example Plugin" />
+    </root>
+  </artifact>
+</component>

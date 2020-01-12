@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_ozzie_example_plugin" default="compile.module.ozzie_example_plugin">
+  <dirname property="module.ozzie_example_plugin.basedir" file="${ant.file.module_ozzie_example_plugin}"/>
+  
+  <property name="module.jdk.home.ozzie_example_plugin" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.ozzie_example_plugin" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.ozzie_example_plugin" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.ozzie_example_plugin" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="ozzie_example_plugin.output.dir" value="${module.ozzie_example_plugin.basedir}/out/production/Ozzie Example Plugin"/>
+  <property name="ozzie_example_plugin.testoutput.dir" value="${module.ozzie_example_plugin.basedir}/out/test/Ozzie Example Plugin"/>
+  
+  <path id="ozzie_example_plugin.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="ozzie_example_plugin.module.production.classpath">
+    <path refid="${module.jdk.classpath.ozzie_example_plugin}"/>
+    <path refid="library.ozzie-19.12.31-jar-with-dependencies.classpath"/>
+  </path>
+  
+  <path id="ozzie_example_plugin.runtime.production.module.classpath">
+    <pathelement location="${ozzie_example_plugin.output.dir}"/>
+    <path refid="library.ozzie-19.12.31-jar-with-dependencies.classpath"/>
+  </path>
+  
+  <path id="ozzie_example_plugin.module.classpath">
+    <path refid="${module.jdk.classpath.ozzie_example_plugin}"/>
+    <pathelement location="${ozzie_example_plugin.output.dir}"/>
+    <path refid="library.ozzie-19.12.31-jar-with-dependencies.classpath"/>
+  </path>
+  
+  <path id="ozzie_example_plugin.runtime.module.classpath">
+    <pathelement location="${ozzie_example_plugin.testoutput.dir}"/>
+    <pathelement location="${ozzie_example_plugin.output.dir}"/>
+    <path refid="library.ozzie-19.12.31-jar-with-dependencies.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.ozzie_example_plugin">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.ozzie_example_plugin">
+    <patternset refid="excluded.from.module.ozzie_example_plugin"/>
+  </patternset>
+  
+  <path id="ozzie_example_plugin.module.sourcepath">
+    <dirset dir="${module.ozzie_example_plugin.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.ozzie_example_plugin" depends="compile.module.ozzie_example_plugin.production,compile.module.ozzie_example_plugin.tests" description="Compile module Ozzie Example Plugin"/>
+  
+  <target name="compile.module.ozzie_example_plugin.production" depends="register.custom.compilers" description="Compile module Ozzie Example Plugin; production classes">
+    <mkdir dir="${ozzie_example_plugin.output.dir}"/>
+    <javac2 destdir="${ozzie_example_plugin.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.ozzie_example_plugin}/javac">
+      <compilerarg line="${compiler.args.ozzie_example_plugin}"/>
+      <bootclasspath refid="ozzie_example_plugin.module.bootclasspath"/>
+      <classpath refid="ozzie_example_plugin.module.production.classpath"/>
+      <src refid="ozzie_example_plugin.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.ozzie_example_plugin"/>
+    </javac2>
+    
+    <copy todir="${ozzie_example_plugin.output.dir}">
+      <fileset dir="${module.ozzie_example_plugin.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.ozzie_example_plugin.tests" depends="register.custom.compilers,compile.module.ozzie_example_plugin.production" description="compile module Ozzie Example Plugin; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.ozzie_example_plugin" description="cleanup module">
+    <delete dir="${ozzie_example_plugin.output.dir}"/>
+    <delete dir="${ozzie_example_plugin.testoutput.dir}"/>
+  </target>
+</project>

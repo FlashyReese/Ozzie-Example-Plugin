@@ -1,4 +1,4 @@
 {
-  "test": "Que",
-  "test2": "verga"
+  "test": "Eres {1}? Si eres {1}.",
+  "examplecommanddesc":"Descripcion del examplecommand"
 }

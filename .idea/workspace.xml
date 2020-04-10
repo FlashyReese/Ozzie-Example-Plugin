@@ -6,8 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be6e2dd1-95b4-4c4a-90d3-925e219fe9d1" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="be6e2dd1-95b4-4c4a-90d3-925e219fe9d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Ozzie_20_02_22_jar_with_dependencies.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Ozzie_19_12_31_jar_with_dependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ozzie Example Plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ozzie Example Plugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/locale/en_US.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/locale/en_US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/locale/es_MX.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/locale/es_MX.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/plugin/ExamplePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/plugin/ExamplePlugin.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,19 +31,29 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1WGghgzQl5zFCAbEZbpcIU0aEpx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="ozzie_example_plugin" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ozzie/target/Ozzie-19.12.31-jar-with-dependencies.jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="D:/Binaries/Ozzie r2.0/Ozzie-20.02.22-jar-with-dependencies.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -43,18 +61,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ievil\Desktop\Ozzie Example Plugin\resources" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -68,10 +74,26 @@
       <updated>1578781465255</updated>
       <workItem from="1578781467801" duration="2696000" />
       <workItem from="1578791926707" duration="5426000" />
+      <workItem from="1582362375790" duration="173000" />
+      <workItem from="1582441581353" duration="1595000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1582441648339">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1582441648339" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1582441613556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582441613556" />
+    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1582441645106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582441645106" />
   </component>
 </project>

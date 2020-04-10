@@ -1,4 +1,4 @@
 {
-  "test": "What",
-  "test2": "the"
+  "test": "Are you {1}? Yes, you are {1}.",
+  "examplecommanddesc":"Example Command's Description"
 }
